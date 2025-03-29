@@ -1,0 +1,166 @@
+/* Property Details Page */
+.property-details-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section */
+.property-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .hero-overlay {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+/* .hero-text {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    font-size: 1.3rem;
+} */
+
+/* Property Overview */
+.property-container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.property-container h2 {
+    margin-top: 20px;
+}
+
+/* Image Gallery */
+.property-gallery {
+    display: flex; 
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Property Details, Amenities, Security & Parking */
+.details-list,
+.amenities-list,
+.security-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.details-list li,
+.amenities-list li,
+.security-list li {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.details-list li strong,
+.amenities-list li strong,
+.security-list li strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Security & Parking - Now in Cards */
+.security-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.security-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.security-card strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .property-container {
+        text-align: center;
+    }
+
+    .gallery-image {
+        max-width: 80%;
+    }
+
+    .details-list,
+    .amenities-list,
+    .security-list,
+    .security-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-list li,
+    .amenities-list li,
+    .security-list li,
+    .security-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        max-height: 250px;
+    }
+}
